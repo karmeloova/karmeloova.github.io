@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Unity",
+    "icon": "/icons/Unity.svg",
+    "level": 4,
+    "additional": [
+      { "name": "C#", "level": 5 },
+      { "name": "Shader Graph", "level": 3 },
+      { "name": "Cinemachine", "level": 4 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "React",
+    "icon": "/icons/React.svg",
+    "level": 3,
+    "additional": [
+      { "name": "TypeScript", "level": 4 },
+      { "name": "CSS Modules", "level": 5 }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+.ProjectCard {
+  width: 100%;
+  height: 25dvh;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1.5px solid #8a3c4c;
+  filter: drop-shadow(0px 7px 7px rgb(0, 0, 0));
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ProjectCard:hover {
+  scale: 1.02;
+}
+
+.projectImage {
+  width: 40%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  height: 85%;
+  background-color: rgba(85, 63, 37, 0);
+  border: 1.5px solid #8a3c4c;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.Project {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  margin-top: 2.5%;
+  margin-bottom: 7.5%;
+  margin-left: 2%;
+  font-size: 1.5vh;
+  color: #cecece;
+}
+
+.Title {
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  font-weight: 500;
+}
+
+.TagsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.ProjectDescription {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-size: clamp(1rem, 0.8vw, 2rem);;
+}

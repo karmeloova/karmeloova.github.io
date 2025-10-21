@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.ProjectTitle {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ImagesContainer {
+    width: 85%; 
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TempImgDiv {
+    height: 250px;
+    width: 500px;
+    border: 2px solid pink;
+}
+
+.ImageButton {
+    color: #8a3c4c;
+    filter: drop-shadow(0px 1px 1px #8a3c4c);
+}
+
+.ImageButton:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.TagsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.DescriptionContainer {
+    flex: 1; /* wypełnia resztę dostępnego miejsca */
+    overflow-y: auto; /* 🔥 tylko tekst się przewija */
+    padding-left: 5vw;
+    margin-right: 5vw;
+    padding-right: 20px; /* trochę miejsca obok scrolla */
+    padding-bottom: 30px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #cecece;
+}
+
+.AnotherProjectsContainer {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DescriptionText {
+    font-size: 20px;
+    overflow-y: auto;
+}
+
+.OverlayBackground {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  z-index: 9998;
+}
+
+.ProjectWindowContainer {
+  position: fixed;
+  left: 27.5%;
+  top: 12.5%;
+  width: 45%;
+  height: 75%;
+  background-color: #131210;
+  border: 2px solid #8a3c4c;
+  filter: drop-shadow(0px 4px 4px #8a3c4c);
+  border-radius: 8%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 2.5rem;
+}
+
+.CloseButton {
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
+  color: #cecece;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.CloseButton:hover {
+  color: #ff8da1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1500px) {
+    .ProjectWindowContainer {
+      width: 55%;
+      left: 22.5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ProjectWindowContainer {
+      width: 70%;
+      left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+  .ProjectWindowContainer {
+      width: 80%;
+      left: 10%;
+      border-radius: 5%;
+    }
+
+}
+
+.ProjectImage {
+  width: 70%;
+  height: 100%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  background-color: rgba(85, 63, 37, 0);
+
+  object-fit: contain;
+  border-radius: 20px;
+}

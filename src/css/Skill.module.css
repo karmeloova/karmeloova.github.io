@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.SkillInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.SkillIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.SkillLabel {
+    font-size: 2.5vh;
+    color: #cecece;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.SkillContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vh;
+}
+
+.MainSkill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+}
+
+.SkillLevel {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Circle {
+    width: 2.5vh;
+    height: 2.5vh;
+    border-radius: 100%;
+    border: 2px solid #8a3c4c;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+}
+
+.FilledCircle {
+    background-color: #8a3c4c;
+}

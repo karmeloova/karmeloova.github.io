@@ -1,0 +1,52 @@
+.ExperienceContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    height: 60%;
+    margin-left: 1vw;
+    
+}
+
+.VerticalLine {
+    height: 100%;
+    border-right: 2px solid #8a3c4c;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+}
+
+.Circle {
+    position: absolute;
+    margin-left: -17.5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: #8a3c4c;
+}
+
+.PositionCompany {
+    margin: 0;
+    color: #8a3c4c;
+    font-weight: 500;
+    font-size: 3vh;
+}
+
+.Years {
+    padding: 0;
+    margin: 0;
+    color: #cecece;
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.Description {
+    margin: 0;
+    color: #cecece;
+    font-size: 1.5vh;
+    margin-bottom: 3vh;
+}
+
+.ExperienceInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}

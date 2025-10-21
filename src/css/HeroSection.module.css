@@ -1,0 +1,30 @@
+.HeroSection {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 1rem;
+    left: 2rem;
+    z-index: 10;
+    font-size: clamp(1.6rem, 2.2vw, 3.5rem);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.406));
+}
+
+.NameText {
+    color: #ececec;
+    font-family: 'Poppins', sans-serif;
+}
+
+.RoleText {
+    color: #E8AEBB;
+}
+
+@media (max-width: 1000px) {
+    .HeroSection {
+        left: 1rem;
+        top: 0.6rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
