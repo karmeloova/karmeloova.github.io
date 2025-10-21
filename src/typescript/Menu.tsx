@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import styles from '../css/Menu.module.css';
+import React, { useState, useEffect } from "react";
+import styles from "../css/Menu.module.css";
 import { Menu, X } from "lucide-react";
 
 export function MenuFunc() {
@@ -7,7 +7,7 @@ export function MenuFunc() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  // 👇 zamykanie menu przy powiększeniu okna
+  // Zamknięcie menu po powiększeniu okna
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1000 && isMenuOpen) {
@@ -20,8 +20,8 @@ export function MenuFunc() {
 
   return (
     <div>
-      <div className={styles.Line}> </div>
-      
+      <div className={styles.Line}></div>
+
       {/* DESKTOP MENU */}
       <nav className={styles.Menu}>
         <li><a href="#about" className={styles.MenuButton}>About me</a></li>
@@ -31,22 +31,15 @@ export function MenuFunc() {
         <li><a href="#contact" className={styles.MenuButton}>Contact</a></li>
       </nav>
 
-      {/* MOBILE ICONS */}
-      <div className={styles.MenuButtons}>
-        <Menu
-          size={50}
-          className={`${styles.MobileMenuIcon} ${isMenuOpen ? styles.NotVisible : styles.Visible}`}
-          onClick={toggleMenu}
-        />
-        <X
-          size={50}
-          className={`${styles.MobileMenuIcon} ${isMenuOpen ? styles.Visible : styles.NotVisible}`}
-          onClick={toggleMenu}
-        />
-      </div>
+      {/* MOBILE MENU ICON */}
+      {isMenuOpen ? (
+        <X size={50} className={styles.MobileMenuIcon} onClick={toggleMenu} />
+      ) : (
+        <Menu size={50} className={styles.MobileMenuIcon} onClick={toggleMenu} />
+      )}
 
       {/* MOBILE MENU */}
-      <div className={`${styles.MobileMenu} ${isMenuOpen ? styles.Visible : ''}`}>
+      <div className={`${styles.MobileMenu} ${isMenuOpen ? styles.Visible : ""}`}>
         <a href="#about" className={styles.MenuButtonMobile} onClick={closeMenu}>About me</a>
         <a href="#projects" className={styles.MenuButtonMobile} onClick={closeMenu}>Projects</a>
         <a href="#skills" className={styles.MenuButtonMobile} onClick={closeMenu}>Skills</a>

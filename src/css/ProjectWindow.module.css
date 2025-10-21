@@ -1,140 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-.ProjectTitle {
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.ImagesContainer {
-    width: 85%; 
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.TempImgDiv {
-    height: 250px;
-    width: 500px;
-    border: 2px solid pink;
-}
-
-.ImageButton {
-    color: #8a3c4c;
-    filter: drop-shadow(0px 1px 1px #8a3c4c);
-}
-
-.ImageButton:hover {
-    cursor: pointer;
-    scale: 1.05;
-}
-
-.TagsContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.DescriptionContainer {
-    flex: 1; /* wypełnia resztę dostępnego miejsca */
-    overflow-y: auto; /* 🔥 tylko tekst się przewija */
-    padding-left: 5vw;
-    margin-right: 5vw;
-    padding-right: 20px; /* trochę miejsca obok scrolla */
-    padding-bottom: 30px;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #cecece;
-}
-
-.AnotherProjectsContainer {
-    width: 90%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.DescriptionText {
-    font-size: 20px;
-    overflow-y: auto;
+.ProjectWindowContainer {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(45%, 55vw, 65%);
+  height: clamp(60%, 70vh, 75%);
+  background-color: #131210;
+  border: 2px solid #8a3c4c;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(138, 60, 76, 0.3);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  gap: 1.2rem;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .OverlayBackground {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0);
-  z-index: 9998;
+  background: rgba(0, 0, 0, 0.4); /* półprzezroczysty ciemny filtr */
+  backdrop-filter: blur(8px); /* magiczny efekt rozmycia */
+  z-index: 9998; /* tuż pod oknem (.ProjectWindowContainer ma 9999) */
+  transition: backdrop-filter 0.3s ease, background 0.3s ease;
 }
 
-.ProjectWindowContainer {
-  position: fixed;
-  left: 27.5%;
-  top: 12.5%;
-  width: 45%;
-  height: 75%;
-  background-color: #131210;
-  border: 2px solid #8a3c4c;
-  filter: drop-shadow(0px 4px 4px #8a3c4c);
-  border-radius: 8%;
-  z-index: 9999;
+/* 🔹 Tytuł */
+.ProjectTitle {
+  font-size: clamp(1.8rem, 2vw, 2.4rem);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #e2e2e2;
+}
+
+/* 🔹 Kontener obrazu + strzałki */
+.ImagesContainer {
+  width: 90%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  padding-top: 30px;
-  gap: 2.5rem;
+  gap: 1rem;
 }
 
+/* 🔹 Obraz proporcjonalny */
+.ProjectImage {
+  flex: 1;
+  max-width: 50%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 15px;
+  border: 1.5px solid #8a3c4c;
+}
+
+/* 🔹 Strzałki do zdjęć */
+.ImageButton {
+  color: #8a3c4c;
+  filter: drop-shadow(0px 0px 4px #8a3c4c);
+  transition: transform 0.2s ease;
+}
+
+.ImageButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* 🔹 Tagi */
+.TagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+/* 🔹 Opis — więcej miejsca, większy font */
+.DescriptionContainer {
+  flex: 1;
+  width: 85%;
+  overflow-y: auto;
+  padding: 0.5rem 1rem 1.5rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 1.1rem + 0.3vw, 1.4rem);
+  line-height: 1.6;
+  color: #cecece;
+  text-align: justify;
+  scrollbar-width: thin;
+  scrollbar-color: #8a3c4c transparent;
+}
+
+/* 🔹 Dolne strzałki (przejście między projektami) */
+.AnotherProjectsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.AnotherProjectsContainer svg {
+  color: #8a3c4c;;
+  width: 3rem;
+  height: 3rem;
+  transition: 0.3s;
+}
+
+.AnotherProjectsContainer svg:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 6px #ff8da1);
+  cursor: pointer;
+}
+
+/* 🔹 Przycisk zamykania */
 .CloseButton {
   position: absolute;
-  top: 2vh;
-  right: 3vw;
+  top: 1rem;
+  right: 1.2rem;
   color: #cecece;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .CloseButton:hover {
-  color: #ff8da1;
+  color: #8a3c4c;
   transform: scale(1.1);
 }
 
-@media (max-width: 1500px) {
-    .ProjectWindowContainer {
-      width: 55%;
-      left: 22.5%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .ProjectWindowContainer {
-      width: 70%;
-      left: 15%;
-    }
-}
-
+/* 🔸 MOBILE VIEW */
 @media (max-width: 768px) {
   .ProjectWindowContainer {
-      width: 80%;
-      left: 10%;
-      border-radius: 5%;
-    }
+    width: 90%;
+    height: 65%;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+  }
 
-}
+  .ProjectTitle {
+    font-size: 1.6rem;
+  }
 
-.ProjectImage {
-  width: 70%;
-  height: 100%;
-  margin-top: 2.5%;
-  margin-left: 2.5%;
-  background-color: rgba(85, 63, 37, 0);
+  .ProjectImage {
+    min-width: 70%;
+    max-width: 70%;
+    aspect-ratio: 16 / 10;
+  }
 
-  object-fit: contain;
-  border-radius: 20px;
+  .ProjectWindowContainer .DescriptionContainer {
+    width: 95%;
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .ImageButton {
+    color: #8a3c4c;;
+    filter: drop-shadow(0px 0px 4px #8a3c4c);
+  }
+
+  .AnotherProjectsContainer {
+    padding: 0 2rem;
+  }
+
+  .AnotherProjectsContainer svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .DescriptionContainer p {
+    font-size: 0.85rem;
+  }
 }

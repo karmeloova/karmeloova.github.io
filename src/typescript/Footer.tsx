@@ -5,6 +5,7 @@ export function Footer() {
     return(
         <div>
             <div className={styles.DarkLine}>
+                    <div></div>
                     <p>© 2025 Olga Maruszyńska. All rights reserved.</p>
                 </div>
             <div className={styles.Container}>

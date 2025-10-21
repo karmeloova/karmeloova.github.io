@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Inny projekt",
-    "description": "Sed do eiusmod tempor incididunt...",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue eu risus id tempus. Proin nec nulla vestibulum, cursus dui eget, egestas augue. Sed at nunc sed arcu laoreet hendrerit. Etiam sit amet risus orci. Curabitur non nisi faucibus, aliquam nunc et, pharetra nisl. Suspendisse elementum et augue sit amet malesuada. Ut rhoncus, erat sed sodales placerat, nisl ex lacinia nunc, maximus interdum eros nunc nec dui.",
     "longdesc": "Dłuższy opis drugiego projektu...",
     "images": ["games/XD2.jpg", "/images/game-screenshot.png"],
     "tags": ["Unity", "C#"]
