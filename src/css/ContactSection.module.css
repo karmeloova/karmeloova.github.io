@@ -33,6 +33,7 @@ form {
   border-radius: 8px;
   resize: none;
   box-sizing: border-box;
+  padding-top: 15px;
 }
 
 /* dłuższe pole wiadomości */
