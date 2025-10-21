@@ -5,7 +5,7 @@
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  height: clamp(5rem, 11vh + 1rem, 9rem);
+  height: clamp(5rem, 11vh + 1rem, 8.5rem);
   background: #131210;
   z-index: 7;
   pointer-events: none;
