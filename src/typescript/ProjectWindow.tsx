@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../css/ProjectWindow.module.css";
 import { Tag } from "./Tag";
 import { Play, X } from "lucide-react";
@@ -20,6 +20,14 @@ export function ProjectWindow({ projectIndex, projects, onClose, onNext, onPrev 
   const nextImage = () => setCurrentImageIndex((prev) => (prev + 1) % images.length);
   const previousImage = () => setCurrentImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = "hidden"; // blokada scrolla
+    return () => {
+      document.body.style.overflow = originalStyle; // przywrócenie scrolla
+    };
+  }, []);
+
   return (
     <>
       <div className={styles.OverlayBackground} onClick={onClose}></div>
@@ -31,11 +39,11 @@ export function ProjectWindow({ projectIndex, projects, onClose, onNext, onPrev 
 
         <div className={styles.ImagesContainer}>
           <Play size={50} style={{ transform: "scaleX(-1)" }} className={styles.ImageButton} onClick={previousImage} />
-            <img
-              src={images[currentImageIndex]}
-              alt={`Screenshot ${currentImageIndex + 1}`}
-              className={styles.ProjectImage}
-            />
+          <img
+            src={images[currentImageIndex]}
+            alt={`Screenshot ${currentImageIndex + 1}`}
+            className={styles.ProjectImage}
+          />
           <Play size={50} className={styles.ImageButton} onClick={nextImage} />
         </div>
 
