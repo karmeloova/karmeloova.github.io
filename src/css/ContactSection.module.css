@@ -10,7 +10,7 @@ form {
   flex-direction: column;
   gap: clamp(0.8rem, 0.5rem + 1vw, 1.5rem);
   box-sizing: border-box;
-  padding: 0 clamp(1rem, 2vw, 3rem); /* ładne marginesy po bokach */
+  padding: 0 clamp(0.5rem, 2vw, 1.5rem); /* ładne marginesy po bokach */
 }
 
 /* etykiety */
