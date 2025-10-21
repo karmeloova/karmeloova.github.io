@@ -124,7 +124,7 @@ body {
        transform: scaleY(0.35);
     }
     .blob-bottom-right {
-      transform: rotate(180deg) scaleY(0.35) scaleX(0.5) translateY(-300px) translateX(-200px);
+      transform: rotate(180deg) scaleY(0.25) scaleX(0.7) translateY(-500px) translateX(-100px);
       transform-origin: center;
       z-index: -1;
     }
