@@ -54,7 +54,7 @@ export function ProjectWindow({ projectIndex, projects, onClose, onNext, onPrev 
         </div>
 
         <div className={styles.DescriptionContainer}>
-          <p className={styles.DescriptionText}>{project.longdesc}</p>
+          <p dangerouslySetInnerHTML={{ __html: project.longdesc }} className={styles.DescriptionText}></p>
         </div>
 
         <div className={styles.AnotherProjectsContainer}>

@@ -6,7 +6,8 @@ export function AboutSection() {
             <div className={styles.AboutSection}>
                 <div className={styles.SectionTitle}>✦ About me</div>
                 <hr className={styles.Line}/>
-                <div className={styles.SectionText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+                <div className={styles.SectionText}>I’m an aspiring game developer passionate about creating engaging and meaningful player experiences. My goal is to grow professionally and gain hands-on experience in the industry. I’m looking for a place where I can contribute to interesting projects, learn from others, and be part of a supportive, close-knit team.
+                                                    <br/><br/>I value creativity, collaboration, and the joy of building games together — step by step, learning and improving along the way.</div>
             </div>
         </section>
     )
