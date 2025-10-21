@@ -1,55 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 form {
-    width: 100%;
+  width: 100%;
 }
+
 .ContactContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.8rem, 0.5rem + 1vw, 1.5rem);
+  box-sizing: border-box;
+  padding: 0 clamp(1rem, 2vw, 3rem); /* ładne marginesy po bokach */
 }
 
+/* etykiety */
 .ContactContainer label {
-    padding: 0;
-    margin: 0;
-    font-size: 1.8vh;
-    color: #cecece;
-    font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 0.8rem + 0.4vw, 1.3rem);
+  color: #cecece;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.3rem;
 }
 
+/* pola tekstowe */
 .ContactContainer textarea {
-    width: 100%;
-    height: 1.8vh;
-    background-color: #8a3c4c;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 1.3vh;
-    resize: none;
+  width: 100%;
+  height: clamp(3rem, 2rem + 1vw, 5rem);
+  background-color: #8a3c4c;
+  padding: 0.6rem 0.8rem;
+  font-size: clamp(0.9rem, 0.8rem + 0.2vw, 1.1rem);
+  color: #ececec;
+  border: none;
+  border-radius: 8px;
+  resize: none;
+  box-sizing: border-box;
 }
 
+/* dłuższe pole wiadomości */
 .MessageInput {
-    height: 15vh !important;
+  min-height: clamp(8rem, 4rem + 8vw, 14rem) !important;
 }
 
+/* przycisk wysyłania */
 .SendButton {
-    display: block;
-    width: 15rem;
-    height: 4rem;
-    background-color: #8a3c4c;
-    border-radius: 40px;
-    margin: 2.5rem auto 0;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: #cecece;
-    text-shadow: 1px 1px #cecece38;
-    font-family: 'Poppins', sans-serif;
-    border: none;
+  display: block;
+  width: clamp(10rem, 6rem + 8vw, 15rem);
+  height: clamp(2.5rem, 2rem + 1vw, 4rem);
+  background-color: #8a3c4c;
+  border-radius: 40px;
+  margin: clamp(1.5rem, 1rem + 2vw, 2.5rem) auto 0;
+  font-size: clamp(1rem, 0.8rem + 0.4vw, 1.5rem);
+  color: #cecece;
+  text-shadow: 1px 1px #cecece38;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .SendButton:hover {
-    scale: 1.05;
-    cursor: pointer;
-    background-color: #813645;;
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #813645;
 }
