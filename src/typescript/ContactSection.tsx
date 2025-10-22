@@ -19,7 +19,10 @@ export function ContactSection() {
             "JIl3WoR55pMIwLfRO"
         )
         .then (
-            () => toast.success("Message sent"),
+            () => {
+                toast.success("Message sent");
+                form.current?.reset(); // 🧽 czyści pola formularza
+            },
             (error) => toast.error("Error")
         )
     }
