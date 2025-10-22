@@ -52,7 +52,7 @@
     "title": "Match3Farming (Working title)",
     "description": "A mobile casual game combining match-3 mechanics with farming. Players earn seeds by completing match-3 levels, then plant and grow them on an isometric farm to fulfill various customer orders.",
     "longdesc": "This project blends relaxing farming gameplay with match-3 mechanics, creating a satisfying loop between puzzle-solving and resource management. By completing match-3 levels, players earn seeds that can be planted on an isometric farm and later harvested to complete customer orders.<br/>The project is developed for mobile platforms and uses the Unity Input System with implemented touch controls. Core match-3 gameplay is fully functional, and animations are handled through DOTween for smooth and responsive visual feedback.<br/>This game focuses on cozy progression, rewarding creativity and efficiency in managing the farm alongside fun puzzle gameplay.",
-    "images": ["games/SOONImage.png"],
+    "images": ["games/SoonImage.png"],
     "tags": ["Unity", "Solo", "2D", "Mobile", "Unfinished"]
   },
    {
