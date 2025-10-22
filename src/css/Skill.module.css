@@ -4,10 +4,10 @@
   --accent-color: #8a3c4c;
   --text-color: #cecece;
   --shadow: drop-shadow(0px 4px 4px rgb(0, 0, 0));
-  --gap-size: clamp(0.4rem, 0.8vw, 1rem);
+  --gap-size: clamp(0.4rem, 0.8vw, 2rem);
   --circle-size: clamp(1rem, 1.5dvh + 0.4rem, 3rem);
   --icon-size: clamp(2rem, 5dvh, 3rem);
-  --font-size-skill: clamp(1.5rem, 2vw + 0.6rem, 2.5rem);
+  --font-size-skill: clamp(1.5rem, 2vw + 0.6rem, 2rem);
   --margin-skill: clamp(0.4rem, 1dvh, 0.8rem);
 }
 

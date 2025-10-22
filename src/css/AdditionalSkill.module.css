@@ -5,7 +5,7 @@
   --gap-size: clamp(0.25rem, 0.5vw, 0.6rem);
   --circle-size-sub: clamp(1rem, 0.7dvh + 0.1rem, 2rem); /* 🔹 mniejsze kropki */
   --font-size-skill-sub: clamp(1rem, 0.6vw + 0.45rem, 2rem);
-  --line-width: clamp(2rem, 1.5rem + 2.5vw, 5rem);
+  --line-width: clamp(2rem, 1.5rem + 2.5vw, 4rem);
   --row-height: clamp(1.6rem, 4.2dvh, 2.5rem);
 }
 

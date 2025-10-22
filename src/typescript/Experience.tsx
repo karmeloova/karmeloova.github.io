@@ -16,8 +16,11 @@ export function Experience({ years, position, company, description }: Experience
 
       <div className={styles.ExperienceInfo}>
         <p className={styles.Years}>{years}</p>
+        <p className={styles.Position}>
+          {position}
+        </p>
         <p className={styles.PositionCompany}>
-          {company} — {position}
+          {company}
         </p>
         <p className={styles.Description}>{description}</p>
       </div>

@@ -1,16 +1,23 @@
 [
   {
     "id": 1,
-    "years": "January 2025 - March 2025",
-    "position": "Junior Unity Developer",
-    "company": "Example Gamedev Studio",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "years": "July 2024 - now",
+    "position": "Unity Developer",
+    "company": "8BitJelly - Hobbyist Game Development Team",
+    "description": "Implementation of mechanics and UI in Unity, collaboration with a multidisciplinary team (programmers, sound designers, game designers, artists), version control using GitHub, and workflow management with Trello, Asana and Clickup"
   },
   {
     "id": 2,
-    "years": "April 2024 - December 2024",
-    "position": "Intern Game Programmer",
-    "company": "Indie Dev Studio",
-    "description": "Worked on prototyping gameplay mechanics and tools in Unity using C#."
+    "years": "March 2023 - now",
+    "position": "Game Jam Participant - Unity Developer",
+    "company": "Various Teams",
+    "description": "Participation in multiple game jams, contributing to the development of small-scale games in Unity. Responsible for implementing gameplay mechanics, interactive systems, and puzzles under time constraints, collaborating closely with designers and artists using GitHub for version control."
+  },
+  {
+    "id": 3,
+    "years": "April 2024 - June 2024",
+    "position": "Unity Developer Intern",
+    "company": "Flying Octopus",
+    "description": "Implementation of interactive elements, particle effects, and animations in Unity; collaboration within a development team; version control using GitHub; and testing and optimizing code for performance."
   }
 ]
