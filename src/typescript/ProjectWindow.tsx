@@ -36,9 +36,9 @@ export function ProjectWindow({ projectIndex, projects, onClose, onNext, onPrev 
         <X className={styles.CloseButton} size={40} onClick={onClose} />
 
         <p className={styles.ProjectTitle}>{project.title}</p>
-
+        
         <div className={styles.ImagesContainer}>
-          <Play size={50} style={{ transform: "scaleX(-1)" }} className={styles.ImageButton} onClick={previousImage} />
+          <Play size={50} className={`${styles.ImageButton} ${styles.Left}`} onClick={previousImage} />
           <img
             src={images[currentImageIndex]}
             alt={`Screenshot ${currentImageIndex + 1}`}
@@ -57,10 +57,7 @@ export function ProjectWindow({ projectIndex, projects, onClose, onNext, onPrev 
           <p dangerouslySetInnerHTML={{ __html: project.longdesc }} className={styles.DescriptionText}></p>
         </div>
 
-        <div className={styles.AnotherProjectsContainer}>
-          <Play size={50} style={{ transform: "scaleX(-1)" }} className={styles.ImageButton} onClick={onPrev} />
-          <Play size={50} className={styles.ImageButton} onClick={onNext} />
-        </div>
+        
       </div>
     </>
   );

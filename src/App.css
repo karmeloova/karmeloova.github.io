@@ -27,7 +27,7 @@ body {
 
 .blob {
   position: fixed;
-  width: clamp(20rem, 28vw, 37rem);
+  width: clamp(20rem, 25vw, 37rem);
   height: auto;
   pointer-events: none;
   pointer-events: none;
@@ -128,4 +128,10 @@ body {
       transform-origin: center;
       z-index: -1;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1281px) {
+  .blob-top-left  {
+    transform: scaleY(0.55);
+  }
 }

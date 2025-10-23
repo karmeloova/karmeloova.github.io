@@ -25,9 +25,9 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1281px) {
     .HeroSection {
         top: 0.5rem;
         left: 0.8rem;
-    }   
+    }  
 }

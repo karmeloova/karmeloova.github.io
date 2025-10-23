@@ -10,10 +10,11 @@
 .Container {
   position: relative;
   width: 100%;
+  margin-top: 1rem;
   margin-bottom: var(--section-padding);
   display: flex;
   justify-content: center;
-  scroll-margin-top: 10dvh;
+  scroll-margin-top: clamp(5rem, 11vh + 1rem, 8.5rem);
   z-index: 6;
 }
 
@@ -76,4 +77,14 @@
   .AboutSection {
     width: 85%;
   }
+}
+
+@media (min-width: 769px) and (max-width: 1281px) {
+    .SectionText {
+      font-size: 1rem;
+    }
+
+    .SectionTitle {
+      font-size: 1.8rem;
+    }
 }
