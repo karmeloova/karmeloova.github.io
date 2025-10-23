@@ -4,7 +4,7 @@
     "title": "Spirit Among The Trees",
     "description": "A puzzle-adventure game created during an internal game jam with the 8BitJelly team. Players explore a mysterious environment and solve various logic-based puzzles — from finding hidden items to activating ancient mechanisms.",
     "longdesc": "Itch.io: <a href='https://vox­ten.itch.io/spirits-among-the-trees' target='_blank' style='color:#ffb6c1; font-weight:bold;'>Spirits Among the Trees</a>. — play the jam version here. <br/><br/>My main contributions focused on gameplay implementation and system development. I created the interaction, inventory, and audio systems.<br/>I also developed one of the logic puzzles involving rune placement, where players must discover and arrange symbols in the correct sequence.<br/>Additionally, I implemented the pause menu, credits, and tutorial screens to complete the core game loop.<br/>Working closely with the team helped me strengthen my technical skills and learn how to collaborate effectively under time pressure.",
-    "images": ["/games/SpiritAmongTheTrees/SpiritAmongTheTrees1.png", "/games/SpiritAmongTheTrees/SpiritAmongTheTrees2.png", "/images/preview2.png"],
+    "images": ["/games/SpiritAmongTheTrees/SpiritAmongTheTrees1.webp", "/games/SpiritAmongTheTrees/SpiritAmongTheTrees2.webp"],
     "tags": ["Unity", "Team", "GameJam", "PC", "2D"]
   },
   {
@@ -12,7 +12,7 @@
     "title": "Orbs And Spirits",
     "description": "A 3D platformer currently in development by the 8BitJelly team. The game combines fast-paced combat with interactive objects, environmental elements, and collectible items that reward exploration and experimentation.",
     "longdesc": "As part of the 8BitJelly team, I contributed to the implementation of several core gameplay and UI features. I developed interactive elements such as picking up weapons from racks and collecting letters, and created interface components including the death panel, settings menu, and inventory navigation.<br/>Additionally, I implemented a simple system for random item generation in chests and random audio clip selection to add variety to the gameplay. Working on this project allowed me to gain hands-on experience with gameplay scripting, improve my understanding of UI flow, and collaborate effectively within a small development team.",
-    "images": ["games/OrbsAndSpirits/OrbsAndSpirit1.png", "games/OrbsAndSpirits/OrbsAndSpirit2.png", "games/OrbsAndSpirits/OrbsAndSpirit3.png"],
+    "images": ["games/OrbsAndSpirits/OrbsAndSpirit1.webp", "games/OrbsAndSpirits/OrbsAndSpirit2.webp", "games/OrbsAndSpirits/OrbsAndSpirit3.webp"],
     "tags": ["Unity", "Team", "Unfinished", "PC", "3D"]
   },
   {
@@ -20,7 +20,7 @@
     "title": "MoveMaster",
     "description": "A computer application designed to teach proper exercise execution through computer vision and AI-based motion analysis. Developed in Unity as a team project for Windows, MoveMaster guides users through workout routines and evaluates movement accuracy in real time.",
     "longdesc": "GitHub: <a href='https://github.com/nikpan1/Movemaster' target='_blank' style='color:#ffb6c1; font-weight:bold;'>MoveMaster Repository</a><br/><br/>MoveMaster was a team project developed as part of a university course, focused on combining gameplay mechanics with computer vision and AI-based motion tracking.<br/>As part of the MoveMaster team, I worked on several core gameplay and interface systems. I developed mechanics using ScriptableObjects to define individual exercises and workout sets, allowing for flexible data-driven design.<br/>I also implemented the user interface, including the pause menu, exercise display panel, and main menu, as well as the rotating platform and split-screen functionality that visualize both the user’s and the 3D model’s movements simultaneously.<br/>The project helped me gain experience in building structured, reusable systems and collaborating on a Unity project that integrates AI-driven motion analysis.",
-    "images": ["games/MoveMaster/MoveMaster1.png", "games/MoveMaster/MoveMaster2.png"],
+    "images": ["games/MoveMaster/MoveMaster1.webp", "games/MoveMaster/MoveMaster2.webp"],
     "tags": ["Unity", "Team", "PC", "3D"]
   },
   {
@@ -28,7 +28,7 @@
     "title": "ByteBuddies",
     "description": "A prototype of an educational game designed to teach programming through virtual pet care mechanics. Players take care of their ByteBuddy while learning the logic behind coding concepts in a fun, interactive way. Developed independently in the Godot Engine as part of an engineering project for Windows.",
     "longdesc": "GitHub: <a href='https://github.com/karmeloova/ByteBuddies' target='_blank' style='color:#ffb6c1; font-weight:bold;'>ByteBuddies Repository</a><br/>itch.io: <a href='https://karmeloova.itch.io/bytebuddies' target='_blank' style='color:#ffb6c1;font-weight:bold;'>ByteBuddies</a><br/><br/>ByteBuddies is an educational game created as part of my engineering thesis. The goal of the project was to design an accessible and engaging way to introduce programming concepts through gameplay.<br/>Players take care of a virtual pet — a “ByteBuddy” — by completing simple coding-based mini-games that teach logic, sequencing, and problem-solving. The game combines educational and casual elements, focusing on clarity, interactivity, and player motivation.<br/>The prototype was developed independently using the Godot Engine and designed for Windows. It features mechanics such as pet needs management, mini-games for programming challenges, and a cozy, pastel visual style created with performance in mind.",
-    "images": ["games/ByteBuddies/ByteBuddies1.png", "games/ByteBuddies/ByteBuddies2.png"],
+    "images": ["games/ByteBuddies/ByteBuddies1.webp", "games/ByteBuddies/ByteBuddies2.webp"],
     "tags": ["Godot", "Solo", "PC", "2D"]
   },
   {
@@ -36,7 +36,7 @@
     "title": "Marsfall",
     "description": "A game created for Brackeys Game Jam 2024.2, where players must escape from an abandoned Martian base before a deadly storm hits. Developed for Windows, featuring logic-based puzzles and time-limited challenges.",
     "longdesc": "itch.io: <a href='https://blumi-dev.itch.io/marsfall' target='_blank' style='color:#ffb6c1; font-weight:bold;'>Marsfall</a><br/><br/>Marsfall was created for Brackeys Game Jam 2024.2. The goal of the game is to escape from an abandoned Martian base before a deadly storm strikes, completing tasks and solving puzzles within a limited time.<br/>As part of the development team, I implemented two key gameplay mechanics: a pipe puzzle, where players must arrange pipes in the correct order, and a cable connection puzzle requiring logical thinking and precision.<br/>The project was developed for Windows during a one-week jam and focused on teamwork, time management, and delivering a cohesive experience under tight deadlines.",
-    "images": ["games/Marsfall/Marsfall1.png", "games/Marsfall/Marsfall2.png"],
+    "images": ["games/Marsfall/Marsfall1.webp", "games/Marsfall/Marsfall2.webp"],
     "tags": ["Unity", "Team", "GameJam", "PC", "3D"]
   },
   {
@@ -44,7 +44,7 @@
     "title": "C.O.Ś",
     "description": "A horror game developed during a student internship, featuring an additional DLC. Built in Unity for Windows, the game focuses on atmospheric storytelling, interactive systems, and environmental tension.",
     "longdesc": "itch.io: <a href='https://flyingoctopus.itch.io/cos' target='_blank' style='color:#ffb6c1; font-weight:bold;'>C.O.Ś</a><br/><br/>C.O.Ś is a horror game created as part of a student internship, later expanded with a DLC. The game was developed in Unity and designed for Windows, focusing on atmosphere, interactivity, and environmental storytelling.<br/>I worked on several key gameplay systems, including interactive elements such as the code entry panel, dialogue manager, and toggleable lights. I also implemented a perception system featuring a dynamic crosshair that reacts when hovering over interactive objects.<br/>Additionally, I contributed to the animation of the introductory cutscene and designed particle effects used in the opening sequence and for the monster.<br/>This project helped me strengthen my understanding of gameplay logic, interactivity, and visual feedback design within Unity.",
-    "images": ["games/COS/COS1.png", "games/COS/COS2.png"],
+    "images": ["games/COS/COS1.webp", "games/COS/COS2.webp"],
     "tags": ["Unity", "3D", "Team", "PC"]
   },
   {
@@ -52,7 +52,7 @@
     "title": "Match3Farming (Working title)",
     "description": "A mobile casual game combining match-3 mechanics with farming. Players earn seeds by completing match-3 levels, then plant and grow them on an isometric farm to fulfill various customer orders.",
     "longdesc": "This project blends relaxing farming gameplay with match-3 mechanics, creating a satisfying loop between puzzle-solving and resource management. By completing match-3 levels, players earn seeds that can be planted on an isometric farm and later harvested to complete customer orders.<br/>The project is developed for mobile platforms and uses the Unity Input System with implemented touch controls. Core match-3 gameplay is fully functional, and animations are handled through DOTween for smooth and responsive visual feedback.<br/>This game focuses on cozy progression, rewarding creativity and efficiency in managing the farm alongside fun puzzle gameplay.",
-    "images": ["games/SoonImage.png"],
+    "images": ["games/SoonImage.webp"],
     "tags": ["Unity", "Solo", "2D", "Mobile", "Unfinished"]
   },
    {
@@ -60,7 +60,7 @@
     "title": "Rapid02 (Working title)",
     "description": "More info soon...",
     "longdesc": "More info soon...",
-    "images": ["games/SoonImage.png"],
+    "images": ["games/SoonImage.webp"],
     "tags": ["Unity", "Team", "2D", "PC", "Unfinished"]
   }
 ]
